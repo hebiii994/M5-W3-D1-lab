@@ -5,10 +5,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Item", menuName = "Inventory/Item")]
 public abstract class SO_Item : ScriptableObject
 {
-    [SerializeField] private int _id;
-    [SerializeField] private string _itemName;
-    [SerializeField, TextArea(5, 10)] private string _description;
-    [SerializeField] private Sprite _icon;
+    [SerializeField] protected int _id;
+    [SerializeField] protected string _itemName;
+    [SerializeField, TextArea(5, 10)] protected string _description;
+    [SerializeField] protected Sprite _icon;
 
     public int ID => _id;
     public string ItemName => _itemName;
